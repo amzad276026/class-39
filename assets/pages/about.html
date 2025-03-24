@@ -3,29 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home</title>
+        <title>About</title>
     </head>
     <body>
         <div>
             <div>
-                <h1>Welcome to Our Website</h1>
+                <h1>About Us</h1>
             </div>
             <div>
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="../../index.html">Home</a>
                     </li>
                     <li>
-                        <a href="assets/pages/about.html">About</a>
+                        <a href="../pages/about.html">About</a>
                     </li>
                     <li>
-                        <a href="assets/pages/gallery.html">Gallery</a>
+                        <a href="../pages/gallery.html">Gallery</a>
                     </li>
                     <li>
-                        <a href="assets/pages/contact.html">Contact</a>
+                        <a href="../pages/contact.html">Contact</a>
                     </li>
                     <li>
-                        <a href="assets/pages/form.html">Form</a>
+                        <a href="../pages/form.html">Form</a>
                     </li>
                 </ul>
             </div>
@@ -33,13 +33,13 @@
 
         <div>
             <div>
-                <h2>Introduction</h2>
+                <h2>Our Journey</h2>
             </div>
             <div>
                 <p>
-                    This is <b>demo website</b> designed for students. You can
-                    learn <i>HTML concepts</i> step by step. Important notes are
-                    <mark>highlight</mark>, and <b>key terms are emphasized.</b>
+                    Learn about <b>how we started</b> and our
+                    <b>core values </b>. We focus on <i>innovation</i> and
+                    <i>dedication.</i>
                 </p>
             </div>
         </div>
@@ -52,27 +52,27 @@
                 <picture>
                     <source
                         srcset="
-                            assets/images/home-500.webp 500w,
-                            assets/images/home-500.jpg  500w
+                            ../images/about-500.webp 500w,
+                            ../images/about-500.jpg  500w
                         "
                         media="(max-width: 600px)"
                     />
                     <source
                         srcset="
-                            assets/images/home-1000.webp 1000w,
-                            assets/images/home-1000.jpg  1000w
+                            ../images/about-1000.webp 1000w,
+                            ../images/about-1000.jpg  1000w
                         "
                         media="(max-width: 1200px)"
                     />
                     <source
                         srcset="
-                            assets/images/home-1500.webp 1500w,
-                            assets/images/home-1500.jpg  1500w
+                            ../images/about-1500.webp 1500w,
+                            ../images/about-1500.jpg  1500w
                         "
                         media="(min-width: 1200px)"
                     />
 
-                    <img src="assets/images/home-1500.jpg" alt="home image" />
+                    <img src="../images/about-1500.jpg" alt="about image" />
                 </picture>
             </div>
         </div>
@@ -83,26 +83,26 @@
             <div>
                 <form action="#" method="get">
                     <fieldset>
-                        <legend>Personal Info</legend>
+                        <legend>Contact Info</legend>
                         <p>
-                            <label for="fname">
-                                First Name:
+                            <label for="email">
+                                Email:
                                 <input
-                                    type="text"
-                                    name="fname"
-                                    id="fname"
-                                    placeholder="Enter your first name"
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Enter your email"
                                 />
                             </label>
                         </p>
                         <p>
-                            <label for="lname">
-                                Last Name:
+                            <label for="phone">
+                                Phone Number:
                                 <input
-                                    type="text"
-                                    name="lname"
-                                    id="lname"
-                                    placeholder="Enter your last name"
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="Enter your phone number"
                                 />
                             </label>
                         </p>
@@ -111,35 +111,35 @@
                         <legend>Preferences</legend>
                         <p>
                             <label for="amount">
-                                Amount:
+                                Preferred Amount:
                                 <input
                                     type="number"
                                     name="amount"
                                     id="amount"
-                                    value="50"
+                                    value="20"
                                     min="1"
                                     max="50"
                                 />
                             </label>
                         </p>
                         <p>
-                            <label for="price-range">
-                                Price Range:
+                            <label for="budget-range">
+                                Budget Range:
                                 <input
                                     type="range"
-                                    name="price-range"
-                                    id="price-range"
+                                    name="budget-range"
+                                    id="budget-range"
                                     min="5"
-                                    max="50"
-                                    value="10"
-                                    step="5"
+                                    max="100"
+                                    value="20"
+                                    step="10"
                                 />
                             </label>
                         </p>
                         <p>
-                            <label for="fcolor">
-                                Favorite Color:
-                                <input type="color" name="fcolor" id="fcolor" />
+                            <label for="pcolor">
+                                Preferred Theme Color
+                                <input type="color" name="pcolor" id="pcolor" />
                             </label>
                         </p>
                         <p>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Contact Us</h1>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../pages/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="../pages/form.html">Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Get in Touch</h2>
+            </div>
+            <div>
+                <p>Feel free to reach out to us for any queries or support.</p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            ../images/contact-500.webp 500w,
+                            ../images/contact-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/contact-1000.webp 1000w,
+                            ../images/contact-1000.jpg  1000w
+                        "
+                        media="(max-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/contact-1500.webp 1500w,
+                            ../images/contact-1500.jpg  1500w
+                        "
+                        media="(min-width: 1200px)"
+                    />
+
+                    <img src="../images/contact-1500.jpg" alt="contact image" />
+                </picture>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Form</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Contact Details</legend>
+                        <p>
+                            <label for="email">
+                                Email:
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Enter your email"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="phone">
+                                Phone Number:
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="Enter your phone number"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Feedback</legend>
+                        <p>
+                            <label for="score">
+                                Feedback score:
+                                <input
+                                    type="number"
+                                    name="score"
+                                    id="score"
+                                    value="5"
+                                    min="1"
+                                    max="10"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="satisfaction-level">
+                                Satisfaction Level:
+                                <input
+                                    type="range"
+                                    name="satisfaction-level"
+                                    id="satisfaction-level"
+                                    min="5"
+                                    max="100"
+                                    value="20"
+                                    step="10"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="pcolor">
+                                Theme Preference:
+                                <input type="color" name="pcolor" id="pcolor" />
+                            </label>
+                        </p>
+                        <p>
+                            <button type="submit">Submit</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

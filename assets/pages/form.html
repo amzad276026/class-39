@@ -3,29 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home</title>
+        <title>Form</title>
     </head>
     <body>
         <div>
             <div>
-                <h1>Welcome to Our Website</h1>
+                <h1>Complete Form</h1>
             </div>
             <div>
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="../../index.html">Home</a>
                     </li>
                     <li>
-                        <a href="assets/pages/about.html">About</a>
+                        <a href="../pages/about.html">About</a>
                     </li>
                     <li>
-                        <a href="assets/pages/gallery.html">Gallery</a>
+                        <a href="../pages/gallery.html">Gallery</a>
                     </li>
                     <li>
-                        <a href="assets/pages/contact.html">Contact</a>
+                        <a href="../pages/contact.html">Contact</a>
                     </li>
                     <li>
-                        <a href="assets/pages/form.html">Form</a>
+                        <a href="../pages/form.html">Form</a>
                     </li>
                 </ul>
             </div>
@@ -33,46 +33,39 @@
 
         <div>
             <div>
-                <h2>Introduction</h2>
+                <h2>Fill out the Form</h2>
             </div>
             <div>
-                <p>
-                    This is <b>demo website</b> designed for students. You can
-                    learn <i>HTML concepts</i> step by step. Important notes are
-                    <mark>highlight</mark>, and <b>key terms are emphasized.</b>
-                </p>
+                <p>Please complete the form below for your needs.</p>
             </div>
         </div>
 
         <div>
             <div>
-                <h2>Responsive Image</h2>
-            </div>
-            <div>
                 <picture>
                     <source
                         srcset="
-                            assets/images/home-500.webp 500w,
-                            assets/images/home-500.jpg  500w
+                            ../images/form-500.webp 500w,
+                            ../images/form-500.jpg  500w
                         "
                         media="(max-width: 600px)"
                     />
                     <source
                         srcset="
-                            assets/images/home-1000.webp 1000w,
-                            assets/images/home-1000.jpg  1000w
+                            ../images/form-1000.webp 1000w,
+                            ../images/form-1000.jpg  1000w
                         "
                         media="(max-width: 1200px)"
                     />
                     <source
                         srcset="
-                            assets/images/home-1500.webp 1500w,
-                            assets/images/home-1500.jpg  1500w
+                            ../images/form-1500.webp 1500w,
+                            ../images/form-1500.jpg  1500w
                         "
                         media="(min-width: 1200px)"
                     />
 
-                    <img src="assets/images/home-1500.jpg" alt="home image" />
+                    <img src="../images/form-1500.jpg" alt="form image" />
                 </picture>
             </div>
         </div>
@@ -83,7 +76,7 @@
             <div>
                 <form action="#" method="get">
                     <fieldset>
-                        <legend>Personal Info</legend>
+                        <legend>Basic Info</legend>
                         <p>
                             <label for="fname">
                                 First Name:
@@ -108,15 +101,40 @@
                         </p>
                     </fieldset>
                     <fieldset>
+                        <legend>Details</legend>
+                        <p>
+                            <label for="email">
+                                Email:
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Enter your email"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="phone">
+                                Phone Number:
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="Enter your phone number"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
                         <legend>Preferences</legend>
                         <p>
-                            <label for="amount">
-                                Amount:
+                            <label for="quantity">
+                                Preferred Quantity:
                                 <input
                                     type="number"
-                                    name="amount"
-                                    id="amount"
-                                    value="50"
+                                    name="quantity"
+                                    id="quantity"
+                                    value="20"
                                     min="1"
                                     max="50"
                                 />
@@ -130,16 +148,20 @@
                                     name="price-range"
                                     id="price-range"
                                     min="5"
-                                    max="50"
-                                    value="10"
-                                    step="5"
+                                    max="100"
+                                    value="20"
+                                    step="10"
                                 />
                             </label>
                         </p>
                         <p>
-                            <label for="fcolor">
-                                Favorite Color:
-                                <input type="color" name="fcolor" id="fcolor" />
+                            <label for="choose-color">
+                                Choose a color:
+                                <input
+                                    type="color"
+                                    name="choose-color"
+                                    id="choose-color"
+                                />
                             </label>
                         </p>
                         <p>

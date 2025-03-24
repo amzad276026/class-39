@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Gallery</h1>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../pages/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="../pages/form.html">Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Photo Gallery</h2>
+            </div>
+            <div>
+                <p>Enjoy our collection of beautiful images.</p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            ../images/gallery-500.webp 500w,
+                            ../images/gallery-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/gallery-1000.webp 1000w,
+                            ../images/gallery-1000.jpg  1000w
+                        "
+                        media="(max-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/gallery-1500.webp 1500w,
+                            ../images/gallery-1500.jpg  1500w
+                        "
+                        media="(min-width: 1200px)"
+                    />
+
+                    <img src="../images/gallery-1500.jpg" alt="gallery image" />
+                </picture>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Form</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>User Feedback</legend>
+                        <p>
+                            <label for="search-gallery">
+                                Search Gallery:
+                                <input
+                                    type="search"
+                                    name="search-gallery"
+                                    id="search-gallery"
+                                    placeholder="Seach images"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="gallery-url">
+                                Gallery URL:
+                                <input
+                                    type="url"
+                                    name="gallery-url"
+                                    id="gallery-url"
+                                    placeholder="Paste a URL"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rating</legend>
+                        <p>
+                            <label for="score">
+                                Feedback score:
+                                <input
+                                    type="number"
+                                    name="score"
+                                    id="score"
+                                    value="5"
+                                    min="1"
+                                    max="10"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="satisfaction-level">
+                                Satisfaction Level:
+                                <input
+                                    type="range"
+                                    name="satisfaction-level"
+                                    id="satisfaction-level"
+                                    min="5"
+                                    max="100"
+                                    value="20"
+                                    step="10"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="pcolor">
+                                Preffered Theme Color:
+                                <input type="color" name="pcolor" id="pcolor" />
+                            </label>
+                        </p>
+                        <p>
+                            <button type="submit">Submit</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
